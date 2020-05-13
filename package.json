@@ -1,0 +1,20 @@
+{
+  "name": "parcel-project-boilerplate",
+  "version": "1.0.0",
+  "description": "A project starter with a pre-made file structure and a local server, SCSS compiling and live-reloading workflow. Fork this instead of doing it again and again. And again. And again. Parcel version.",
+  "main": "index.js",
+  "author": "Lenin A Nava",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html -p 3000 --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html",
+    "build": "yarn run clean && yarn run build:parcel"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "parcel-plugin-svg-sprite": "^1.4.1"
+  }
+}
